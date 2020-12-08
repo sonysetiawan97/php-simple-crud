@@ -2,15 +2,13 @@
 
 $serverName = "localhost";
 $username = "root";
-$password = "";
-$dbName = "test";
+$password = "password";
+$dbName = "simple-crud-php";
 
 $conn = mysqli_connect($serverName, $username, $password, $dbName);
 
 try{
-    if($conn){
-        echo "DB connected\n";
-    }
+    $conn;
 } catch(Exception $e) {
     echo $e->getMessage();
     exit;
